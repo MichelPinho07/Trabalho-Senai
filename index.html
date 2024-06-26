@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CineSenai</h1>
+        <nav id="cabeca">
+            <a href="" class="nav">Inicio</a>
+            <a href="" class="nav">Principais</a>
+            <a href="" class="nav">Vilões</a>
+        </nav>
+    </header>
+    <main>
+        <form onsubmit="enviarFilme(event)">
+            <h2>Cadastro de filmes</h2>
+            <input type="url" name="foto" id="id-foto" placeholder="URL de foto de capa">
+            <input type="text" name="titulo" id="id-titulo" placeholder="Titulo">
+            <input type="text" name="autor" id="id-autor" placeholder="Autor">
+            <input type="date" name="data" id="id-data" placeholder="Data">
+            <input type="text" name="genero" id="id-genero" placeholder="Genero">
+            <input type="number" name="duracao" id="id-duracao" placeholder="Duração">
+            <input type="text" name="sinopse" id="id-sinopse" placeholder="Sinopse">
+            <button type="submit">Adicionar Filme</button>
+        </form>
+        <div id="lista-filme">
+            
+        </div>
+    </main>
+    <footer>
+ 
+    </footer>
+</body>
+
+</html>
