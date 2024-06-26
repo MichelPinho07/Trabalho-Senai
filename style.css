@@ -31,3 +31,17 @@ input {
 body{
     background-color: rgb(216, 216, 216);
 }
+img{
+    width: 100px;
+    height: 150px;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin: 40px 480px;
+    border: 1px solid black;
+}

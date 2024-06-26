@@ -1,10 +1,11 @@
 
 let filmes =[]
+const div = document.querySelector(`#lista-filme`)
 function enviarFilme(){
-    let dadosFilme = []
+    const dadosFilme = []
     const form = document.querySelector(`form`)
     const input = new FormData(form)
-    const div = document.querySelector(`#lista-filme`)
+    
 
     const foto = input.get(`foto`)
     const titulo = input.get(`titulo`)
@@ -16,7 +17,7 @@ function enviarFilme(){
     dadosFilme.push(foto, titulo, autor, data, genero, duracao, sinopse)
     filmes.push(dadosFilme)
 
-    localStorage.setItem(`filmes`, JSON.stringify(dadosFilme))
+    localStorage.setItem(`filmes`, JSON.stringify(filmes))
 
     div.innerHTML += `<div>
     <img src="${dadosFilme[0]}" alt="">
@@ -34,14 +35,14 @@ if(filmesArmazenados){
 
     for(const dadosFilme of filmes){
         div.innerHTML += `<div>
-    <img src="${dadosFilme[0]}" alt="">
-    <h2>${dadosFilme[1]}</h2>
-    <p>${dadosFilme[2]}</p>
-    <p>${dadosFilme[3]}</p>
-    <p>${dadosFilme[4]}</p>
-    <p>${dadosFilme[5]}</p>
-    <p>${dadosFilme[6]}</p>
-</div>`
+        <img src="${dadosFilme[0]}" alt="">
+        <h2>${dadosFilme[1]}</h2>
+        <p>${dadosFilme[2]}</p>
+        <p>${dadosFilme[3]}</p>
+        <p>${dadosFilme[4]}</p>
+        <p>${dadosFilme[5]}</p>
+        <p>${dadosFilme[6]}</p>
+    </div>`
      
     }
 }
