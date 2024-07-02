@@ -19,7 +19,7 @@ function enviarFilme() {
 
     localStorage.setItem(`filmes`, JSON.stringify(filmes))
 
-    div.innerHTML += `<div>
+    div.innerHTML += `<div class="filmes">
     <img src="${dadosFilme[0]}" alt="">
     <h2>${dadosFilme[1]}</h2>
     <p>${dadosFilme[2]}</p>
@@ -32,7 +32,7 @@ function enviarFilme() {
 function dados(){
     let contagem = 0
     for (const dadosFilme of filmes) {
-        div.innerHTML += `<div>
+        div.innerHTML += `<div class="filmes">
         <img src="${dadosFilme[0]}" alt="">
         <h2>${dadosFilme[1]}</h2>
         <p id="negrito">Nome do autor: ${dadosFilme[2]}</p>

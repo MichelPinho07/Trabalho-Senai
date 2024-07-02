@@ -63,14 +63,15 @@ img{
     height: 200px;
      margin-top: 5px;
 }
-div{
+.filmes{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgb(201, 201, 201);
     width: 600px;
-    height: 800px;
-    margin: 40px 680px;
+    height: 700px;
+    margin: 40px 380px;
     border: 3px solid black;
     
     word-wrap: break-word;
@@ -84,4 +85,10 @@ p{
 }
 #negrito{
     font-weight: bold;
+}
+#rodape{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    align-items: center;
 }
