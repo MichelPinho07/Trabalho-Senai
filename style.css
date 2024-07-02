@@ -1,0 +1,87 @@
+header{
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -21px;
+}
+h1{
+    color: red;
+    background-color: black;
+    margin-bottom: 0px;
+}
+#cabeca{
+    display: flex;
+    justify-content: space-evenly;
+}
+#cadastrar{
+    margin-top: 70px;
+    color: red;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+}
+.nav{
+    color: black;
+    font-size: x-large;
+    font-variant: small-caps;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 600px;
+    height: 380px;
+    margin: 50px 400px 50px 380px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+#botaoEnviar{
+    margin-top: 30px;
+    color: red;
+    background-color: black;
+}
+input {
+    margin: 5px;
+    width: 300px;
+}
+#lista-filme{
+    width: 0;
+    height: 0;
+}
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210902/pngtree-leisure-time-film-festival-hd-background-image_785370.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+img{
+    width: 150px;
+    height: 200px;
+     margin-top: 5px;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(201, 201, 201);
+    width: 600px;
+    height: 800px;
+    margin: 40px 680px;
+    border: 3px solid black;
+    
+    word-wrap: break-word;
+    
+}
+.oculto{
+    display: none;
+}
+p{
+    margin-top: 2px;
+}
+#negrito{
+    font-weight: bold;
+}
